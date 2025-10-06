@@ -1,0 +1,7 @@
+2025-10-06 19:36:27, MOVE, v:1, k:poo@chinela, mode:DOWN
+2025-10-06 19:55:04, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-06 19:55:05, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:17
+2025-10-06 19:55:14, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-06 19:55:18, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-06 19:55:26, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-06 19:56:01, MOVE, v:1, k:poo@chinela, mode:BACK
