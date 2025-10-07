@@ -1,0 +1,31 @@
+2025-10-07 18:44:07, MOVE, v:1, k:poo@relogio, mode:DOWN
+2025-10-07 19:44:30, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-07 19:44:32, EXEC, v:1, k:poo@relogio, mode:FREE, size:35
+2025-10-07 19:49:15, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:48
+2025-10-07 19:49:53, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:48
+2025-10-07 19:50:05, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:48
+2025-10-07 19:50:06, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-07 19:50:07, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-07 19:50:07, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-07 19:50:07, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-07 19:50:07, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-07 19:50:39, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:48
+2025-10-07 19:50:41, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-07 19:51:14, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:45
+2025-10-07 19:51:49, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:45
+2025-10-07 19:55:48, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:49
+2025-10-07 19:57:12, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:50
+2025-10-07 19:58:02, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:50
+2025-10-07 19:58:26, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7
+2025-10-07 19:58:53, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:53
+2025-10-07 20:02:44, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:60
+2025-10-07 20:04:54, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:60
+2025-10-07 20:07:00, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:60
+2025-10-07 20:08:20, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:60
+2025-10-07 20:09:23, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:60
+2025-10-07 20:09:31, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:60
+2025-10-07 20:11:38, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:60
+2025-10-07 20:11:52, EXEC, v:1, k:poo@relogio, mode:FREE
+2025-10-07 20:12:07, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-07 20:12:09, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-07 20:12:36, MOVE, v:1, k:poo@relogio, mode:BACK

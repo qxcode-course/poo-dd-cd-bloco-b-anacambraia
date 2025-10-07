@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_19-44-32",
+            "content": "@@ -968,254 +968,4 @@\n 2d%7D%22\n-%0A%0Adef main():%0A    tempo = Time (%22%22, %22%22, %22%22)%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22 %22)%0A        if args%5B0%5D = %22end%22:%0A            break%0A        elif args%5B0%5D = %22show%22:%0A            print(tempo)%0Amain()%0A%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-07_19-49-15",
+            "content": "@@ -502,21 +502,20 @@\n   self._\n-_\n ho\n-u\n r\n+a\n  = value\n@@ -674,23 +674,22 @@\n   self._\n-_\n minut\n-e\n+o\n  = value\n@@ -849,23 +849,23 @@\n   self._\n-_\n se\n-co\n+gu\n nd\n+o\n  = value\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-07_19-49-53",
+            "content": "@@ -683,17 +683,16 @@\n _minute \n-+\n = value%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-07_19-50-05",
+            "content": "@@ -508,17 +508,16 @@\n .__hour \n-+\n = value%0A\n@@ -860,17 +860,16 @@\n _second \n-+\n = value%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-07_19-50-39",
+            "content": "@@ -473,33 +473,68 @@\n a%22)%0A            \n+return%0A        self.__hour += value\n %0A\n-\n %0A    def setMinu\n@@ -647,32 +647,69 @@\n o%22)%0A            \n+return%0A        self.__minute += value\n %0A%0A    def setSec\n@@ -812,32 +812,32 @@\n undo invalido%22)%0A\n-\n            %0A%0A   \n@@ -831,16 +831,54 @@\n         \n+ return%0A        self.__second += value\n %0A%0A    de\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-07_19-51-14",
+            "content": "@@ -1019,17 +1019,16 @@\n rgs%5B0%5D =\n-=\n  %22end%22:%0A\n@@ -1067,17 +1067,16 @@\n rgs%5B0%5D =\n-=\n  %22show%22:\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-07_19-51-49",
+            "content": "@@ -1107,130 +1107,8 @@\n po)%0A\n-        elif args%5B0%5D == %22set%22:%0A            __hour = args%5B1%5D%0A            __minute = args%5B2%5D%0A            __second = args%5B3%5D%0A\n main\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-07_19-55-48",
+            "content": "@@ -1229,61 +1229,8 @@\n %5B3%5D%0A\n-            tempo = Time(__hour, __minute, __second)%0A\n main\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-10-07_19-57-12",
+            "content": "@@ -1046,16 +1046,73 @@\n   break%0A\n+        elif args%5B0%5D == %22show%22:%0A            print(tempo)%0A\n         \n@@ -1282,65 +1282,8 @@\n nd)%0A\n-        elif args%5B0%5D == %22show%22:%0A            print(tempo)%0A\n main\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-07_19-58-02",
+            "content": "@@ -469,35 +469,16 @@\n alida%22)%0A\n-            return%0A\n         \n@@ -474,32 +474,32 @@\n %22)%0A            %0A\n+\n %0A    def setMinu\n@@ -608,35 +608,16 @@\n alido%22)%0A\n-            return%0A\n         \n@@ -696,32 +696,32 @@\n  or value %3E 59:%0A\n+\n             prin\n@@ -752,27 +752,8 @@\n o%22)%0A\n-            return%0A\n     \n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-07_19-58-53",
+            "content": "@@ -91,20 +91,17 @@\n _hour = \n-hour\n+0\n %0A       \n@@ -117,22 +117,17 @@\n inute = \n-minute\n+0\n %0A       \n@@ -143,22 +143,17 @@\n econd = \n-second\n+0\n %0A%0A    de\n@@ -383,32 +383,33 @@\n : int) -%3E None:%0A\n+ \n         if value\n@@ -428,16 +428,16 @@\n e %3E 23:%0A\n-\n         \n@@ -492,51 +492,8 @@\n urn%0A\n-        else:%0A            setHour += value%0A\n     \n@@ -650,53 +650,8 @@\n urn%0A\n-        else:%0A            setMinute += value%0A\n     \n@@ -778,32 +778,32 @@\n undo invalido%22)%0A\n+\n             retu\n@@ -809,54 +809,8 @@\n urn%0A\n-        else:%0A            setSecond += value%0A%0A\n     \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-07_20-02-44",
+            "content": "@@ -534,24 +534,25 @@\n setHour \n++\n = value%0A\n         \n@@ -535,32 +535,32 @@\n etHour += value%0A\n-\n             %0A%0A  \n@@ -737,16 +737,17 @@\n tMinute \n++\n = value%0A\n@@ -911,32 +911,32 @@\n n%0A        else:%0A\n-\n             setS\n@@ -941,16 +941,17 @@\n tSecond \n++\n = value%0A\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-07_20-04-54",
+            "content": "@@ -1002,20 +1002,16 @@\n turn f%22%7B\n-:02d\n self.__h\n@@ -1013,23 +1013,23 @@\n f.__hour\n-%7D:%7B\n :02d\n+%7D:%7B\n self.__m\n@@ -1037,15 +1037,15 @@\n nute\n-%7D:%7B\n :02d\n+%7D:%7B\n self\n@@ -1053,16 +1053,20 @@\n __second\n+:02d\n %7D%22%0A%0Adef \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-07_20-07-00",
+            "content": "@@ -1002,16 +1002,20 @@\n turn f%22%7B\n+:02d\n self.__h\n@@ -1020,16 +1020,20 @@\n _hour%7D:%7B\n+:02d\n self.__m\n@@ -1040,16 +1040,20 @@\n inute%7D:%7B\n+:02d\n self.__s\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-07_20-08-20",
+            "content": "@@ -1017,12 +1017,8 @@\n hour\n-:.2d\n %7D:%7Bs\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-07_20-09-23",
+            "content": "@@ -1016,16 +1016,17 @@\n _hour:.2\n+d\n %7D:%7Bself.\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-07_20-09-31",
+            "content": "@@ -1014,19 +1014,18 @@\n .__hour:\n-02d\n+.2\n %7D:%7Bself.\n@@ -1032,20 +1032,16 @@\n __minute\n-:02d\n %7D:%7Bself.\n@@ -1052,12 +1052,8 @@\n cond\n-:02d\n %7D%22%0A%0A\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-07_20-11-38",
+            "content": "class Time:\n    def __init__(self, hour : int, minute : int, second : int):\n        self.__hour = hour\n        self.__minute = minute\n        self.__second = second\n\n    def getSecond(self, second : int):\n        return self.__second\n\n    def getMinute(self, minute : int):\n        return self.__minute\n\n    def getHour(self, hour : int):\n        return self.__hour\n\n    def setHour(self, value : int) -> None:\n        if value < 0 or value > 23:\n            print(\"fail: hora invalida\")\n            return\n        else:\n            setHour = value\n            \n\n    def setMinute(self, value : int) -> None:\n        if value < 0 or value > 59:\n            print(\"fail: minuto invalido\")\n            return\n        else:\n            setMinute = value\n            \n\n    def setSecond(self, value : int) -> None:\n        if value < 0 or value > 59:\n            print(\"fail: segundo invalido\")\n            return\n        else:\n            setSecond = value\n\n           \n\n    def __str__(self):\n        return f\"{self.__hour:02d}:{self.__minute:02d}:{self.__second:02d}\"\n\ndef main():\n    tempo = Time (\"\", \"\", \"\")\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"set\":\n            __hour = args[1]\n            __minute = args[2]\n            __second = args[3]\n            tempo = Time(__hour, __minute, __second)\n        elif args[0] == \"show\":\n            print(tempo)\nmain()\n\n",
+            "lines": "60"
+        }
+    ]
+}

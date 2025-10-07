@@ -1,5 +1,5 @@
 class Chinela:
-    def __init__():
+    def __init__(self, tamanho : int):
         self.__tamanho = 0
 
     def getTamanho(self):
