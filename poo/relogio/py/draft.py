@@ -1,60 +1,78 @@
 class Time:
-    def __init__(self, hour : int, minute : int, second : int):
-        self.__hour = hour
-        self.__minute = minute
-        self.__second = second
+    def __init__(self, hora, minuto, segundo):
+        self.hora = 0
+        self.minuto = 0
+        self.segundo = 0
+        self.setHour(hora)
+        self.setMinute(minuto)
+        self.setSecond(segundo)
 
-    def getSecond(self, second : int):
-        return self.__second
+    def getsegundo(self):
+        return self.segundo
 
-    def getMinute(self, minute : int):
-        return self.__minute
-
-    def getHour(self, hour : int):
-        return self.__hour
-
-    def setHour(self, value : int) -> None:
+    def setHour(self, value):
         if value < 0 or value > 23:
             print("fail: hora invalida")
             return
-        else:
-            setHour = value
-            
+        self.hora = value
 
-    def setMinute(self, value : int) -> None:
+    def setMinute(self, value):
         if value < 0 or value > 59:
             print("fail: minuto invalido")
             return
-        else:
-            setMinute = value
-            
+        self.minuto = value
 
-    def setSecond(self, value : int) -> None:
+    def setSecond(self, value):
         if value < 0 or value > 59:
             print("fail: segundo invalido")
             return
-        else:
-            setSecond = value
+        self.segundo = value
 
-           
+    def nextSecond(self):
+        self.segundo += 1
+        if self.segundo > 59:
+            self.segundo = 0
+            self.minuto += 1
+        if self.minuto > 59:
+            self.minuto = 0
+            self.hora += 1
+        if self.hora > 23:
+            self.hora = 0
 
     def __str__(self):
-        return f"{self.__hour:02d}:{self.__minute:02d}:{self.__second:02d}"
+        return f"{self.hora:02d}:{self.minuto:02d}:{self.segundo:02d}"
 
 def main():
-    tempo = Time ("", "", "")
+    tempo = Time(0, 0, 0)
+
     while True:
         line = input()
         print("$" + line)
-        args = line.split(" ")
+        args = line.split()
+
         if args[0] == "end":
             break
+
+        elif args[0] == "init":
+            hora = int(args[1])
+            minuto = int(args[2])
+            segundo = int(args[3])
+            tempo = Time(hora, minuto, segundo)
+
         elif args[0] == "set":
-            __hour = args[1]
-            __minute = args[2]
-            __second = args[3]
-            tempo = Time(__hour, __minute, __second)
+            hora = int(args[1])
+            minuto = int(args[2])
+            segundo = int(args[3])
+            tempo.setHour(hora)
+            tempo.setMinute(minuto)
+            tempo.setSecond(segundo)
+
         elif args[0] == "show":
             print(tempo)
-main()
 
+        elif args[0] == "next":
+            tempo.nextSecond()
+
+        else:
+            print("fail: comando invalido")
+main()
