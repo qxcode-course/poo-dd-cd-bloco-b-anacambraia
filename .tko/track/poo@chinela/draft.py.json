@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2025-10-06_19-55-05",
-            "content": "class Chinela:\n    def __init__():\n        self.__tamanho = 0\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, valor : int):\n        if self.__tamanho <= 20 and self.__tamanho <= 50:\n\nchinela = Chinela()\n\nwhile chinela.getTamanho == 0:\n    print(\"qual tamanho da sua chinel?\")\n    tamanho = int(input())\n    chinela.setTamanho(tamanho)\nprint(\"Parabens, voc\u00ea comprou uma chinela tamanho\", chinela.getTamanho())\n",
+            "content": "@@ -29,30 +29,11 @@\n t__(\n-self, tamanho : int\n ):%0A\n+\n     \n@@ -163,17 +163,16 @@\n      if \n-(\n self.__t\n@@ -212,92 +212,9 @@\n = 50\n-) and self.__tamanho %25 2 == 0:%0A            self.__tamanho = valor%0A            return\n+:\n %0A%0Ach\n@@ -263,16 +263,16 @@\n o == 0:%0A\n+\n     prin\n@@ -300,17 +300,16 @@\n a chinel\n-a\n ?%22)%0A    \n",
             "lines": "17"
+        },
+        {
+            "label": "2025-10-13_15-44-26",
+            "content": "@@ -25,24 +25,39 @@\n _init__(self\n+, tamanho : int\n ):%0A        s\n@@ -73,18 +73,16 @@\n anho = 0\n-  \n %0A%0A    de\n@@ -162,16 +162,22 @@\n f, valor\n+ : int\n ):%0A     \n@@ -186,35 +186,74 @@\n  if \n-20 %3C= valor\n+(self.__tamanho %3C= 20 and self.__tamanho\n  %3C= 50\n+)\n  and \n-valor\n+self.__tamanho\n  %25 2\n@@ -316,219 +316,77 @@\n turn\n- True%0A        else:%0A            print(%22Valor inv%C3%A1lido! O tamanho deve ser um n%C3%BAmero par entre 20 e 50.%22)%0A            return False%0A%0A%0Achinela = Chinela()%0A%0Awhile True:%0A    try:%0A        tamanho = int(input(%22Digite o\n+%0A%0Achinela = Chinela()%0A%0Awhile chinela.getTamanho == 0:%0A    print(%22qual\n  tam\n@@ -408,24 +408,42 @@\n nela\n-: %22)\n+?%22\n )%0A    \n+tamanho = int(input())%0A\n    \n- if\n  chi\n@@ -466,30 +466,17 @@\n tamanho)\n-:%0A            \n+%0A\n print(%22P\n@@ -483,9 +483,9 @@\n arab\n-%C3%A9\n+e\n ns, \n@@ -545,110 +545,4 @@\n ())%0A\n-            break%0A    except erro:%0A            print(%22Entrada inv%C3%A1lida! Digite apenas n%C3%BAmeros inteiros.%22)%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-13_16-22-22",
+            "content": "class Chinela:\n    def __init__(self):\n        self.__tamanho = 0  \n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, valor):\n        if 20 <= valor <= 50 and valor % 2 == 0:\n            self.__tamanho = valor\n            return True\n        else:\n            print(\"Valor inv\u00e1lido! O tamanho deve ser um n\u00famero par entre 20 e 50.\")\n            return False\n\n\nchinela = Chinela()\n\nwhile True:\n    try:\n        tamanho = int(input(\"Digite o tamanho da sua chinela: \"))\n        if chinela.setTamanho(tamanho):\n            print(\"Parab\u00e9ns, voc\u00ea comprou uma chinela tamanho\", chinela.getTamanho())\n            break\n    except erro:\n            print(\"Entrada inv\u00e1lida! Digite apenas n\u00fameros inteiros.\")\n",
+            "lines": "26"
         }
     ]
 }
