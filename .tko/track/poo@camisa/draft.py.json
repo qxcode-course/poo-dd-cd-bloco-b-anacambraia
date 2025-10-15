@@ -7,8 +7,18 @@
         },
         {
             "label": "2025-10-13_16-27-00",
-            "content": "",
+            "content": "@@ -1,720 +0,0 @@\n-class Camisa:%0A    def __init__(self):%0A        self.__tamanho = %22%22%0A%0A    def getTamanho(self):%0A        return = self.__tamanho%0A%0A    def setTamanho(self, valor):%0A        tamanhos_validos = %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D%0A        if valor in tamanhos_validos:%0A            self.__tamanho = valor%0A            print(f%22Tamanho '%7Bvalor%7D' atribu%C3%ADdo com sucesso!%22)%0A            return True%0A        else:%0A            print(%22Valor inv%C3%A1lido! Os tamanhos permitidos s%C3%A3o: PP, P, M, G, GG, XG.%22)%0A            return False%0A%0Aroupa = Roupa()%0A%0Awhile roupa.getTamanho() == %22%22: %0A    print(%22Digite seu tamanho de roupa%22)%0A    tamanho = input() %0A    roupa.setTamanho(tamanho) %0Aprint(%22Parabens, voc%C3%AA comprou uma roupa tamanho%22, roupa.getTamanho())\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-15_13-44-11",
+            "content": "@@ -100,16 +100,18 @@\n   return\n+ =\n  self.__\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-15_13-44-26",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho = \"\"\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, valor):\n        tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if valor in tamanhos_validos:\n            self.__tamanho = valor\n            print(f\"Tamanho '{valor}' atribu\u00eddo com sucesso!\")\n            return True\n        else:\n            print(\"Valor inv\u00e1lido! Os tamanhos permitidos s\u00e3o: PP, P, M, G, GG, XG.\")\n            return False\n\nroupa = Roupa()\n\nwhile roupa.getTamanho() == \"\": \n    print(\"Digite seu tamanho de roupa\")\n    tamanho = input() \n    roupa.setTamanho(tamanho) \nprint(\"Parabens, voc\u00ea comprou uma roupa tamanho\", roupa.getTamanho())",
+            "lines": "24"
         }
     ]
 }
