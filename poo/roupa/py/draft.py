@@ -13,11 +13,11 @@ class Roupa:
         elif valor == "":
             print("size: ()")
         else:
-            print("Valor inválido! Os tamanhos permitidos são: PP, P, M, G, GG, XG.")
+            print("fail: Valor inválido, tente PP, P, M, G, GG ou XG")
             return False
 
     def __str__(self):
-        return f"{self.getTamanho}"
+        return f"size: ({self.__tamanho})"
 
 def main():
     roupa = Roupa ()
@@ -29,4 +29,6 @@ def main():
             break
         elif args[0] == "show":
             print(roupa)
+        elif args[0] == "size":
+            roupa.setTamanho(args[1])
 main()

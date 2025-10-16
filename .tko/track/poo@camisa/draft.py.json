@@ -17,8 +17,13 @@
         },
         {
             "label": "2025-10-15_13-44-26",
-            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho = \"\"\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, valor):\n        tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if valor in tamanhos_validos:\n            self.__tamanho = valor\n            print(f\"Tamanho '{valor}' atribu\u00eddo com sucesso!\")\n            return True\n        else:\n            print(\"Valor inv\u00e1lido! Os tamanhos permitidos s\u00e3o: PP, P, M, G, GG, XG.\")\n            return False\n\nroupa = Roupa()\n\nwhile roupa.getTamanho() == \"\": \n    print(\"Digite seu tamanho de roupa\")\n    tamanho = input() \n    roupa.setTamanho(tamanho) \nprint(\"Parabens, voc\u00ea comprou uma roupa tamanho\", roupa.getTamanho())",
+            "content": "@@ -284,16 +284,79 @@\n = valor%0A\n+            print(f%22Tamanho '%7Bvalor%7D' atribu%C3%ADdo com sucesso!%22)%0A\n         \n@@ -501,37 +501,35 @@\n se%0A%0A\n-camisa = Camis\n+roupa = Roup\n a()%0A\n+%0A\n while \n-camis\n+roup\n a.ge\n@@ -580,21 +580,20 @@\n anho de \n-camis\n+roup\n a%22)%0A    \n@@ -615,21 +615,20 @@\n () %0A    \n-camis\n+roup\n a.setTam\n@@ -676,21 +676,20 @@\n rou uma \n-camis\n+roup\n a tamanh\n@@ -696,13 +696,12 @@\n o%22, \n-camis\n+roup\n a.ge\n",
             "lines": "24"
+        },
+        {
+            "label": "2025-10-16_11-55-55",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho = \"\"\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, valor):\n        tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if valor in tamanhos_validos:\n            self.__tamanho = valor\n            return True\n        else:\n            print(\"Valor inv\u00e1lido! Os tamanhos permitidos s\u00e3o: PP, P, M, G, GG, XG.\")\n            return False\n\ncamisa = Camisa()\nwhile camisa.getTamanho() == \"\": \n    print(\"Digite seu tamanho de camisa\")\n    tamanho = input() \n    camisa.setTamanho(tamanho) \nprint(\"Parabens, voc\u00ea comprou uma camisa tamanho\", camisa.getTamanho())",
+            "lines": "22"
         }
     ]
 }

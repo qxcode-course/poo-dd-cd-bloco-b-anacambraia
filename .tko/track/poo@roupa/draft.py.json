@@ -62,8 +62,28 @@
         },
         {
             "label": "2025-10-15_14-20-44",
-            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho = \"\"\n\n    def getTamanho(self):\n        return self.__tamanho \n\n    def setTamanho(self, valor):\n        tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if valor in tamanhos_validos:\n            self.__tamanho = valor\n            return True\n        elif valor == \"\":\n            print(\"size: ()\")\n        else:\n            print(\"Valor inv\u00e1lido! Os tamanhos permitidos s\u00e3o: PP, P, M, G, GG, XG.\")\n            return False\n\n    def __str__(self):\n        return f\"{self.getTamanho}\"\n\ndef main():\n    roupa = Roupa ()\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(roupa)\nmain()",
+            "content": "@@ -534,32 +534,25 @@\n n f%22\n-size: (\n %7Bself.\n-__t\n+getT\n amanho%7D\n-)\n %22%0A%0Ad\n",
             "lines": "32"
+        },
+        {
+            "label": "2025-10-16_11-27-59",
+            "content": "@@ -401,14 +401,8 @@\n nt(%22\n-fail: \n Valo\n@@ -415,15 +415,37 @@\n lido\n-, tente\n+! Os tamanhos permitidos s%C3%A3o:\n  PP,\n@@ -460,16 +460,17 @@\n , GG, XG\n+.\n %22)%0A     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-16_11-29-24",
+            "content": "@@ -777,78 +777,8 @@\n pa)%0A\n-        elif args%5B0%5D == %22size%22:%0A            roupa.setTamanho(args%5B1%5D)%0A\n main\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-16_11-29-55",
+            "content": "@@ -444,11 +444,9 @@\n , GG\n- ou\n+,\n  XG%22\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-16_11-30-07",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho = \"\"\n\n    def getTamanho(self):\n        return self.__tamanho \n\n    def setTamanho(self, valor):\n        tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if valor in tamanhos_validos:\n            self.__tamanho = valor\n            return True\n        elif valor == \"\":\n            print(\"size: ()\")\n        else:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n            return False\n\n    def __str__(self):\n        return f\"size: ({self.__tamanho})\"\n\ndef main():\n    roupa = Roupa ()\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(roupa)\n        elif args[0] == \"size\":\n            roupa.setTamanho(args[1])\nmain()",
+            "lines": "34"
         }
     ]
 }
