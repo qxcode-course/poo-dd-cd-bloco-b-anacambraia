@@ -14,7 +14,7 @@ class Person:
 
 class Motorcycle:
     def __init__(self, power : int):
-        self.__power = 1
+        self.__power = power or 1
         self.__person = None
         self.__time = 0
 
@@ -78,5 +78,11 @@ def main():
         elif args[0] == "init":
             power = int(args[1])
             motoca = Motorcycle(power)
+        elif args[0] == "leave":
+            result = motoca.remove()
+            print(result)
+        elif args[0] == "buy":
+            time = int(args[1])
+            motoca.buyTime(time)
 main()
 
