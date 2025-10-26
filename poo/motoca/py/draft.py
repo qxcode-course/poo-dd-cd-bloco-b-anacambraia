@@ -1,7 +1,7 @@
 class Person:
-    def __init__(self, age : int, name : str):
-        self.__age : int = age
-        self.__name : str = name
+    def __init__(self, name: str, age: int):
+        self.__name = name
+        self.__age = age
 
     def getAge(self):
         return self.__age
@@ -10,15 +10,16 @@ class Person:
         return self.__name
 
     def __str__(self):
-       return f"{self.__age}:{self.__name}"
+        return f"{self.__name}:{self.__age}"
+
 
 class Motorcycle:
-    def __init__(self, power : int):
+    def __init__(self, power: int):
         self.__power = power or 1
         self.__person = None
         self.__time = 0
 
-    def insertPerson(self, person : Person) -> bool:
+    def insertPerson(self, person: Person) -> bool:
         if self.__person is not None:
             print("fail: busy motorcycle")
             return False
@@ -28,40 +29,41 @@ class Motorcycle:
     def remove(self):
         if self.__person is None:
             print("fail: empty motorcycle")
-            return None
-        person_remove = self.__person
+            return
+        person_removed = self.__person
         self.__person = None
-        return person_remove
+        return person_removed
 
     def buyTime(self, time: int):
         self.__time += time
 
     def drive(self, time: int):
+        if self.__time <= 0:
+            print("fail: buy time first")
+            return
         if self.__person is None:
             print("fail: empty motorcycle")
             return
         if self.__person.getAge() > 10:
             print("fail: too old to drive")
             return
-        if self.__time <= 0:
-            print("fail: buy time first")
-            return
-
         if time > self.__time:
             print(f"fail: time finished after {self.__time} minutes")
             self.__time = 0
         else:
             self.__time -= time
 
+
     def honk(self):
-        return "P" + ("e" * self.__potencia) + "m"
+        return "P" + ("e" * self.__power) + "m"
 
     def __str__(self):
-        persona = "empty" if self.__person is None else str(self.__person)
-        return f"power:{self.__power}, time:{self.__time}, person:({persona})"
+        person_str = "empty" if self.__person is None else str(self.__person)
+        return f"power:{self.__power}, time:{self.__time}, person:({person_str})"
+
 
 def main():
-    motoca = Motorcycle("")
+    motoca = Motorcycle(1)
     while True:
         line = input()
         print("$" + line)
@@ -70,19 +72,26 @@ def main():
             break
         elif args[0] == "show":
             print(motoca)
+        elif args[0] == "init":
+            power = int(args[1])
+            motoca = Motorcycle(power)
         elif args[0] == "enter":
             nome = args[1]
             idade = int(args[2])
             person = Person(nome, idade)
             motoca.insertPerson(person)
-        elif args[0] == "init":
-            power = int(args[1])
-            motoca = Motorcycle(power)
         elif args[0] == "leave":
             result = motoca.remove()
-            print(result)
+            if result is not None:
+                print(result)
         elif args[0] == "buy":
             time = int(args[1])
             motoca.buyTime(time)
-main()
+        elif args[0] == "drive":
+            time = int(args[1])
+            motoca.drive(time)
+        elif args[0] == "honk":
+            print(motoca.honk())
 
+
+main()

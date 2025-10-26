@@ -8,19 +8,19 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /workspaces/poo-dd-cd-bloco-b-anacambraia/.tko/cache/poo.md
-  cache_timestamp: '2025-10-23 16:16:53'
+  cache_timestamp: '2025-10-26 14:45:37'
   filters: null
 expanded:
 - poo@campanha-principal
-- poo@bloco_b-primeiras-classes
-- poo@bloco_b-modificadores-de-acesso
 - poo@bloco_b-agregação-simples
+- poo@bloco_b-modificadores-de-acesso
 tasks:
   poo@chinela: '{rate:100, human:sim, iagen:sim, guide:sim, alone:7, study:90}'
   poo@camisa: '{rate:100, human:sim, guide:sim, alone:7}'
   poo@roupa: '{rate:100, human:sim, alone:8, study:80}'
   poo@relogio: '{rate:100, human:sim, iagen:sim, guide:sim, alone:8, study:160}'
-  poo@motoca: '{rate:20}'
+  poo@motoca: '{rate:100, human:sim, iagen:sim, alone:6, study:300}'
+  poo@grafite: '{rate:100, human:sim, iagen:sim, guide:sim, alone:6, study:120}'
 flags:
   quests: 0
   tracks: 0
@@ -28,4 +28,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@motoca
+selected: poo@grafite
