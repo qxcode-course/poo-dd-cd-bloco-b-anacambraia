@@ -40,3 +40,65 @@
 2025-10-26 14:45:56, MOVE, v:1, k:poo@grafite, mode:PICK
 2025-10-26 14:45:57, EXEC, v:1, k:poo@grafite, mode:FULL, rate:100
 2025-10-26 14:45:59, MOVE, v:1, k:poo@grafite, mode:BACK
+2025-10-26 14:47:21, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-26 15:06:35, EXEC, v:1, k:poo@motouber, mode:FULL, rate:12, size:72
+2025-10-26 15:07:26, EXEC, v:1, k:poo@motouber, mode:FULL, rate:25, size:74
+2025-10-26 15:07:51, EXEC, v:1, k:poo@motouber, mode:FULL, rate:50, size:76
+2025-10-26 15:08:13, EXEC, v:1, k:poo@motouber, mode:FULL, rate:75, size:78
+2025-10-26 15:09:28, EXEC, v:1, k:poo@motouber, mode:FULL, rate:87, size:80
+2025-10-26 15:10:05, EXEC, v:1, k:poo@motouber, mode:FULL, rate:87
+2025-10-26 15:12:42, EXEC, v:1, k:poo@motouber, mode:FULL, rate:100, size:78
+2025-10-26 15:12:52, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-26 15:13:36, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-26 15:14:18, EXEC, v:1, k:poo@motouber, mode:FULL, rate:100
+2025-10-26 15:14:25, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-26 15:16:38, SELF, v:1, k:poo@motouber, rate:100, human:sim, guide:sim, alone:8, study:120
+2025-10-26 15:16:51, MOVE, v:1, k:poo@tamagotchi, mode:PICK
+2025-10-26 15:18:40, MOVE, v:1, k:poo@tamagotchi, mode:BACK
+2025-10-26 15:18:58, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-26 15:26:37, EXEC, v:1, k:poo@charger, mode:FULL, rate:5, size:79
+2025-10-26 15:27:13, EXEC, v:1, k:poo@charger, mode:FULL, rate:10, size:81
+2025-10-26 15:27:36, EXEC, v:1, k:poo@charger, mode:FULL, rate:15, size:85
+2025-10-26 15:27:55, EXEC, v:1, k:poo@charger, mode:FULL, rate:40, size:87
+2025-10-26 15:28:11, EXEC, v:1, k:poo@charger, mode:FULL, rate:40, size:89
+2025-10-26 15:28:29, EXEC, v:1, k:poo@charger, mode:FULL, rate:85, size:91
+2025-10-26 15:34:59, EXEC, v:1, k:poo@charger, mode:FULL, rate:90, size:93
+2025-10-26 15:35:16, EXEC, v:1, k:poo@charger, mode:FULL, rate:90
+2025-10-26 15:40:53, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:103
+2025-10-26 15:41:05, EXEC, v:1, k:poo@charger, mode:FULL, rate:100, size:103
+2025-10-26 15:41:35, MOVE, v:1, k:poo@charger, mode:BACK
+2025-10-26 15:42:40, SELF, v:1, k:poo@charger, rate:100, human:sim, iagen:sim, guide:sim, alone:5, study:90
+2025-10-26 15:43:01, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-26 15:43:02, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:164
+2025-10-26 15:43:13, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-26 15:44:17, SELF, v:1, k:poo@notebook, rate:100, human:sim, iagen:sim, guide:sim, alone:5, study:60
+2025-10-26 15:44:41, MOVE, v:1, k:poo@tamagotchi, mode:PICK
+2025-10-26 15:53:05, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:2
+2025-10-26 15:53:11, MOVE, v:1, k:poo@tamagotchi, mode:BACK
+2025-10-26 15:53:21, MOVE, v:1, k:poo@tamagotchi, mode:PICK
+2025-10-26 15:55:40, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-26 17:22:36, MOVE, v:1, k:poo@tamagotchi, mode:PICK
+2025-10-26 18:22:26, MOVE, v:1, k:poo@tamagotchi, mode:PICK
+2025-10-26 18:22:27, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:82
+2025-10-26 18:23:26, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:82
+2025-10-26 18:27:06, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:52
+2025-10-26 18:27:36, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:41
+2025-10-26 18:29:05, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:61
+2025-10-26 18:29:42, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:61
+2025-10-26 18:32:41, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:80
+2025-10-26 18:33:02, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:80
+2025-10-26 18:34:43, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:81
+2025-10-26 18:34:56, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:81
+2025-10-26 18:35:04, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:81
+2025-10-26 18:35:13, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:81
+2025-10-26 18:37:40, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:81
+2025-10-26 18:38:44, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:81
+2025-10-26 18:59:23, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:81
+2025-10-26 18:59:24, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-26 18:59:25, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-26 19:01:27, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:12, size:82
+2025-10-26 19:02:59, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:50, size:85
+2025-10-26 19:03:20, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:62, size:88
+2025-10-26 19:03:35, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:100, size:91
+2025-10-26 19:03:55, MOVE, v:1, k:poo@tamagotchi, mode:BACK
+2025-10-26 19:05:09, SELF, v:1, k:poo@tamagotchi, rate:100, human:sim, iagen:sim, guide:sim, alone:7, study:200

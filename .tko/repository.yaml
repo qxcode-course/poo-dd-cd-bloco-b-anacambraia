@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /workspaces/poo-dd-cd-bloco-b-anacambraia/.tko/cache/poo.md
-  cache_timestamp: '2025-10-26 14:45:37'
+  cache_timestamp: '2025-10-26 18:22:15'
   filters: null
 expanded:
 - poo@campanha-principal
@@ -21,6 +21,10 @@ tasks:
   poo@relogio: '{rate:100, human:sim, iagen:sim, guide:sim, alone:8, study:160}'
   poo@motoca: '{rate:100, human:sim, iagen:sim, alone:6, study:300}'
   poo@grafite: '{rate:100, human:sim, iagen:sim, guide:sim, alone:6, study:120}'
+  poo@motouber: '{rate:100, human:sim, guide:sim, alone:8, study:120}'
+  poo@notebook: '{rate:100, human:sim, iagen:sim, guide:sim, alone:5, study:60}'
+  poo@charger: '{rate:100, human:sim, iagen:sim, guide:sim, alone:5, study:90}'
+  poo@tamagotchi: '{rate:100, human:sim, iagen:sim, guide:sim, alone:7, study:200}'
 flags:
   quests: 0
   tracks: 0
@@ -28,4 +32,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@grafite
+selected: poo@tamagotchi
